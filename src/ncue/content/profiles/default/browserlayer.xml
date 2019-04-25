@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="ncue.content"
+      interface="ncue.content.interfaces.INcueContentLayer"
+      />
+</layers>
