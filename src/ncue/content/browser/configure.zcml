@@ -31,5 +31,13 @@
         template="templates/folder_listing.pt"
         layer="zope.interface.Interface"
         permission="zope2.View"
-    /> 
+    />
+    <browser:page
+        name="cover_view"
+        for="*"
+        class=".views.CoverView"
+        template="templates/folder_listing.pt"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
 </configure>
