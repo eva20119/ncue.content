@@ -17,5 +17,19 @@
       type="plone"
       directory="static"
       />
-
+    <browser:page
+        name="debug"
+        for="*"
+        class=".views.Debug"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
+    <browser:page
+        name="custom_folder_listing"
+        for="*"
+        class=".folder.FolderListing"
+        template="templates/folder_listing.pt"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    /> 
 </configure>
