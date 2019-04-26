@@ -1,0 +1,16 @@
+<model xmlns="http://namespaces.plone.org/supermodel/schema">
+    <schema>
+        <field name="file_1" type="plone.namedfile.field.NamedBlobFile">,
+            <title >file_1</title> 
+            <description >file_1 desc</description>,
+            <required>False</required>,
+            <readonly>False</readonly>,
+        </field>
+        <field name="file_2" type="plone.namedfile.field.NamedBlobFile">,
+            <title >file_2</title> 
+            <description >file_2 desc</description>,
+            <required>False</required>,
+            <readonly>False</readonly>,
+        </field> 
+    </schema>
+</model>

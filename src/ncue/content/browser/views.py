@@ -23,4 +23,38 @@ class Debug(BrowserView):
 class CoverView(BrowserView):
     template = ViewPageTemplateFile("templates/cover_view.pt")
     def __call__(self):
+        request = self.request
+        portal = api.portal.get()
+
+        self.news = api.content.find(context=portal['department']['department_news'], depth=1, sort_on='effective_date', sort_limit=4)
+        self.event = api.content.find(context=portal['department']['department_event'], depth=1, sort_on='effective_date', sort_limit=4)
+
+        return self.template()
+
+    def formatDate(self, date):
+        return date.strftime('%Y-%m-%d %H:%m')
+        # return self.plone_view.toLocalizedTime(time, long_format, time_only)
+
+
+class ContactUs(BrowserView):
+    tmplate = ViewPageTemplateFile("templates/contact_us.pt")
+    def __call__(self):
+        request = self.request
+        portal = api.portal.get()
+
+        name = request.get('name')
+        email = request.get('email')
+        subject = request.get('subject')
+        message = request.get('message')
+
+        if name and email:
+            api.portal.show_message(message='您的留言已收到會盡快回覆'.decode('utf-8'), request=request)
+            request.response.redirect(portal.absolute_url() + '/contact_us')
+        else:
+            return self.tmplate()
+
+
+class CustomNewsitemView(BrowserView):
+    template = ViewPageTemplateFile("templates/custom_newsitem_view.pt")
+    def __call__(self):
         return self.template()
