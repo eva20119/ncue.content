@@ -7,7 +7,11 @@ from plone import api
 
 
 class CoverImgBanner(base.ViewletBase):
-    pass
+    def update(self):
+        portal = api.portal.get()
+        self.banner_left = api.content.find(context=portal['banner']['banner_left'])[0]
+        self.banner_right_1 = api.content.find(context=portal['banner']['banner_right_1'])[0]
+        self.banner_right_2 = api.content.find(context=portal['banner']['banner_right_2'])[0]
 
 
 class CoverNewsBanner(base.ViewletBase):
