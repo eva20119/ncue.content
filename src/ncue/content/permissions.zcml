@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="ncue.content.AddEmployee"
+        title="ncue.content: Add Employee"
+    />
+
+
+    <permission
         id="ncue.content.AddCover"
         title="ncue.content: Add Cover"
     />
