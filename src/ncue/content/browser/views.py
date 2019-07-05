@@ -56,3 +56,9 @@ class CustomNewsitemView(BrowserView):
     template = ViewPageTemplateFile("templates/custom_newsitem_view.pt")
     def __call__(self):
         return self.template()
+
+
+class TeacherDetail(BrowserView):
+    template = ViewPageTemplateFile("templates/teacher_detail.pt")
+    def __call__(self):
+       return self.template()

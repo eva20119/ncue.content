@@ -66,3 +66,9 @@ class FolderListing(BrowserView):
 
     def toLocalizedTime(self, time, long_format=None, time_only=None):
         return self.plone_view.toLocalizedTime(time, long_format, time_only)
+
+
+class TeacherListing(FolderListing):
+    template = ViewPageTemplateFile("templates/teacher_listing.pt")
+    def __call__(self):
+        return self.template()

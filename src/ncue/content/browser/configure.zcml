@@ -18,6 +18,22 @@
       directory="static"
       />
     <browser:page
+        name="teacher_detail"
+        for="*"
+        class=".views.TeacherDetail"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
+
+    <browser:page
+        name="teacher_listing"
+        for="*"
+        class=".folder.TeacherListing"
+        layer="zope.interface.Interface"
+        permission="zope2.View"
+    />
+
+    <browser:page
         name="debug"
         for="*"
         class=".views.Debug"

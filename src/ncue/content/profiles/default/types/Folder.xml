@@ -19,6 +19,7 @@
 
   <property name="view_methods">
     <element value="custom_folder_listing"/>
+    <element value="teacher_listing" />
     <element value="album_view"/>
     <element value="event_listing"/>
     <element value="full_view"/>
