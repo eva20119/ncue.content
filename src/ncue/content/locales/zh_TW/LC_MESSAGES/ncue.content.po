@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../profiles/default/types/Cover.xml
 msgid "Cover"
-msgstr ""
+msgstr "首頁"
 
 #: ../profiles/default/types/Cover.xml
 #: ../profiles/default/types/Employee.xml
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../profiles/default/types/Employee.xml
 msgid "Employee"
-msgstr ""
+msgstr "員工"
 
 #: ../configure.zcml:31
 msgid "Installs the ncue.content add-on."
@@ -74,19 +74,19 @@ msgstr ""
 
 #: ../content/employee.py:33
 msgid "teacher detail"
-msgstr ""
+msgstr "員工詳細資料(內頁模式顯示)"
 
 #: ../content/employee.py:37
 msgid "teacher image"
-msgstr ""
+msgstr "員工名稱"
 
 #: ../content/employee.py:29
 msgid "teacher list word"
-msgstr ""
+msgstr "員工列表資料(列表模式顯示)"
 
 #: ../content/employee.py:25
 msgid "title"
-msgstr ""
+msgstr "名稱"
 
 #: ../content/employee.py:18
 msgid "女"

@@ -1,0 +1,100 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2019-07-15 06:23+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: ncue.content\n"
+
+#: ../portlets/sidebar.py:42
+msgid "Add Place weather"
+msgstr ""
+
+#: ../portlets/sidebar.py:22
+msgid "City name along with country code i.e Delhi,IN"
+msgstr ""
+
+#: ../profiles/default/types/Cover.xml
+msgid "Cover"
+msgstr ""
+
+#: ../profiles/default/types/Cover.xml
+#: ../profiles/default/types/Employee.xml
+msgid "Edit"
+msgstr ""
+
+#: ../portlets/sidebar.py:53
+msgid "Edit Place weather"
+msgstr ""
+
+#: ../profiles/default/types/Employee.xml
+msgid "Employee"
+msgstr ""
+
+#: ../configure.zcml:31
+msgid "Installs the ncue.content add-on."
+msgstr ""
+
+#: ../portlets/sidebar.py:21
+msgid "Name of your place with country code"
+msgstr ""
+
+#: ../portlets/sidebar.py:43
+msgid "This portlet displays weather of the place."
+msgstr ""
+
+#: ../configure.zcml:40
+msgid "Uninstalls the ncue.content add-on."
+msgstr ""
+
+#: ../profiles/default/types/Cover.xml
+#: ../profiles/default/types/Employee.xml
+msgid "View"
+msgstr ""
+
+#: ../portlets/sidebar.py:36
+msgid "Weather of the place"
+msgstr ""
+
+#: ../configure.zcml:31
+msgid "ncue.content"
+msgstr ""
+
+#: ../configure.zcml:40
+msgid "ncue.content (uninstall)"
+msgstr ""
+
+#: ../content/employee.py:33
+msgid "teacher detail"
+msgstr ""
+
+#: ../content/employee.py:37
+msgid "teacher image"
+msgstr ""
+
+#: ../content/employee.py:29
+msgid "teacher list word"
+msgstr ""
+
+#: ../content/employee.py:25
+msgid "title"
+msgstr ""
+
+#: ../content/employee.py:18
+msgid "女"
+msgstr ""
+
+#: ../content/employee.py:17
+msgid "男"
+msgstr ""

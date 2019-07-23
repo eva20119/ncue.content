@@ -26,7 +26,7 @@ class CoverView(BrowserView):
         request = self.request
         portal = api.portal.get()
 
-        self.event = api.content.find(context=portal['department']['department_event'], depth=1, sort_on='effective_date', sort_limit=10)
+        self.event = api.content.find(context=portal['department'], depth=2, sort_on='effective', sort_limit=10, portal_type='News Item', sort_order='descending')
         return self.template()
 
     def formatDate(self, date):

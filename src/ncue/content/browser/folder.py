@@ -28,8 +28,18 @@ class FolderListing(BrowserView):
         self.b_size = int(b_size) if b_size is not None else limit_display
         b_start = getattr(self.request, 'b_start', None)
         self.b_start = int(b_start) if b_start is not None else 0
-        self.sort_order = self.request.get('sort_order', '')
-        self.sort_on = self.request.get('sort_on', '')
+#        self.sort_order = self.request.get('sort_order', 'descending')
+#        self.sort_on = self.request.get('sort_on', 'effective')
+
+    @property
+    def sort_order(self):
+        sort_order = getattr(self.request, 'sort_order', 'descending')
+        return sort_order
+
+    @property
+    def sort_on(self):
+        sort_on = getattr(self.request, 'sort_on', 'effective')
+        return sort_on
 
     def results(self, **kwargs):
         kwargs.update(self.request.get('contentFilter', {}))
@@ -72,3 +82,29 @@ class TeacherListing(FolderListing):
     template = ViewPageTemplateFile("templates/teacher_listing.pt")
     def __call__(self):
         return self.template()
+
+    @property
+    def sort_on(self):
+        sort_on = getattr(self.request, 'sort_on', 'getObjPositionInParent')
+        return sort_on
+
+    @property
+    def sort_order(self):
+        sort_order = getattr(self.request, 'sort_order', 'ascending')
+        return sort_order
+
+    def results(self, **kwargs):
+        kwargs.update(self.request.get('contentFilter', {}))
+        if 'object_provides' not in kwargs:  # object_provides is more specific
+            kwargs.setdefault('portal_type', self.friendly_types)
+        kwargs.setdefault('batch', True)
+        kwargs.setdefault('b_size', self.b_size)
+        kwargs.setdefault('b_start', self.b_start)
+        kwargs.setdefault('sort_order', self.sort_order)
+        kwargs.setdefault('sort_on', self.sort_on)
+        listing = aq_inner(self.context).restrictedTraverse(
+            '@@folderListing', None)
+        if listing is None:
+            return []
+        results = listing(**kwargs)
+        return results
