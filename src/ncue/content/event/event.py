@@ -1,5 +1,14 @@
 # -*- coding: utf-8 -*-
 from ncue.content import _
+from plone import api
+from zope.globalrequest import getRequest
+
+
+
+def userLogin(event):
+    request = getRequest()
+    abs_url = api.portal.get().absolute_url()
+    request.response.redirect('%s/folder_contents' %abs_url)
 
 
 def moveObjectsToTop(obj, event):

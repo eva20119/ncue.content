@@ -9,5 +9,10 @@
         handler=".event.moveObjectsToTop"
     />
 
+    <subscriber
+        for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
+        handler=".event.userLogin"
+    />
+
 </configure>
 
