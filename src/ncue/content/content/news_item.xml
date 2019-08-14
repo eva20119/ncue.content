@@ -12,5 +12,11 @@
             <required>False</required>,
             <readonly>False</readonly>,
         </field> 
+        <field name="file_3" type="plone.namedfile.field.NamedBlobFile">,
+            <title >file_3</title>
+            <description >file_3 desc</description>,
+            <required>False</required>,
+            <readonly>False</readonly>,
+        </field>
     </schema>
 </model>
