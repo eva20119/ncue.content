@@ -12,8 +12,6 @@ from zope.interface import implements
 from plone import api
 
 import json
-import urllib
-import urllib2
 
 
 class ISidebarPortlet(IPortletDataProvider):
