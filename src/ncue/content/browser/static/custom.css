@@ -1,0 +1,189 @@
+.template-cover_view #portal-globalnav-wrapper {
+  margin-bottom: 0;
+}
+#portal-globalnav .inPath{
+  background: #9dd3a8;
+}
+.portaltype-plone-site #portal-globalnav .index_html, .portaltype-cover #portal-globalnav .index_html {
+  background: #9dd3a8;
+}
+
+
+.template-cover_view .flexslider {
+  border: 0;
+}
+
+@media (min-width: 1200px){
+  .outer-wrapper > .container {
+    max-width: 1250px;
+  }
+}
+.plone-toolbar-top #edit-zone .plone-toolbar-logo img {
+  margin-top: 5px;
+}
+#edit-zone .plone-toolbar-logo {
+  padding-right: 13px;
+  padding-left: 13px;
+}
+aside .portletContent div {
+  text-align: center;
+}
+aside .portletContent div a img{
+  margin: 3px;
+}
+
+.portlet .portletContent {
+    max-width: 100%;
+    overflow: hidden;
+/*    padding-right: 5px;*/
+
+}
+.portlet .portletContent > * {padding:0}
+.todaynotice:after {
+  content: url(/OppToday/resource/logo_70_70.png/@@images/image/alert)
+}
+.soon:after {
+  content: url(/OppToday/resource/coming-soon.png/@@images/image/alert)
+}
+
+#content-core {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#content-core h4 {
+  font-size: 22px;
+}
+
+#content-core ul {
+  padding-left: 5px;
+}
+
+#content-core li {
+  padding: 5px;
+  list-style: none;
+  line-height: 26px;
+}
+
+/* color */
+
+/* override plone default color */
+.plone-navbar {
+  background: #0080ff;
+}
+
+.context {
+  background: #9dd3a8;
+  border-color: #ceefe3;
+}
+
+body {
+  background: #f4f0e6;
+}
+
+
+/* notice page */
+.pat-autotoc.autotabs, .autotabs {
+  background: #fffff5;
+  box-shadow: 5px 5px 2px #ccc;
+}
+
+.pat-autotoc.autotabs .autotoc-nav a.active, .autotabs .autotoc-nav a.active, .pat-autotoc.autotabs .autotoc-nav a.active:hover, .autotabs .autotoc-nav a.active:hover {
+  background: #a3daff;
+}
+.pat-autotoc.autotabs .autotoc-nav a, .autotabs .autotoc-nav a {
+  background: #fff;
+}
+
+.pat-autotoc.autotabs .autotoc-nav, .autotabs .autotoc-nav {
+  
+}
+
+
+
+/* 以下 cover_view, */
+.template-cover_view #content-core a {
+  color: #0080ff;
+}
+.template-cover_view #content-core a:visited {
+  color: #a7dbdb;
+}
+
+.template-cover_view #content-core .block-title {
+  margin: 0;
+  padding: 10px 8px;
+  background: #ffda8e;
+  color: #333;
+  box-shadow: 5px 5px 2px #ccc;
+}
+
+.template-cover_view #content-core .block {
+  background: #fffff5;
+  padding: 10px;
+  box-shadow: 5px 5px 2px #ccc;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.template-cover_view #content-core .row {
+  margin-bottom: 30px;
+}
+
+
+
+/* portlet 全站統一 */
+.portlet .portletHeader {
+  background: #9dd3a8;
+  color: #666;
+}
+
+.portlet .portletContent {
+  background: #ceefe4;
+}
+
+
+
+/* table */
+.table {
+  box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.7);
+}
+
+.table .thead-dark th{
+  background: #0080ff;
+  border-color: #8df;
+}
+
+.table th {
+  text-align:center;
+}
+@media (min-width: 760px){
+  .table .deadline {
+    white-space:nowrap;
+  }
+}
+
+#content-core h3 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.template-profile_view #content-core h3 { 
+  margin-top: 0;
+}
+
+.highlight {
+  color: #0080ff;
+}
+
+#global_statusmessage {
+  width: 100%;
+}
+
+.table td {
+  vertical-align:middle;
+  line-height: 24px;
+}
+
+.plone-nav li label::after {
+  content: none;
+}

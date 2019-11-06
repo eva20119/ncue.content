@@ -79,4 +79,16 @@
         layer="zope.interface.Interface"
         permission="zope2.View"
     />
+
+
+  <!-- main_template.pt 無法 overrides, 暫解 -->
+  <!-- https://github.com/plone/Products.CMFPlone/issues/2918 -->
+  <browser:page
+      for="*"
+      name="main_template"
+      class=".main_template.MainTemplate"
+      permission="zope.Public"
+      layer="ncue.content.interfaces.INcueContentLayer"
+      />
+
 </configure>
