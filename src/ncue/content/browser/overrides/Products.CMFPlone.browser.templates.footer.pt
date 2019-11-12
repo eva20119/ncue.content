@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      tal:omit-tag=""
+      i18n:domain="plone">
+
+  <aside class="portlet portletClassic" id="portal-footer-signature" metal:define-macro="portlet">
+    <div class="portletContent">
+<?python
+from DateTime import DateTime
+from plone import api
+portal = api.portal.get()
+?>
+        <p>版權所有 國立高雄科技大學 海洋休閒管理系</p>
+        <p>地址:81157 高雄市楠梓區海專路142號 | 電話：(07)361-7141</p>
+    </div>
+  </aside>
+</html>
+

@@ -1,189 +1,234 @@
-.template-cover_view #portal-globalnav-wrapper {
-  margin-bottom: 0;
-}
-#portal-globalnav .inPath{
-  background: #9dd3a8;
-}
-.portaltype-plone-site #portal-globalnav .index_html, .portaltype-cover #portal-globalnav .index_html {
-  background: #9dd3a8;
-}
+/*
+藍 深 --> 淺:
+#0000A1
+#1F6ED4
+#39BAE8
+#B9EDF8
+*/
 
-
-.template-cover_view .flexslider {
-  border: 0;
+a {
+  color: #0000A1;
 }
-
-@media (min-width: 1200px){
-  .outer-wrapper > .container {
-    max-width: 1250px;
-  }
-}
-.plone-toolbar-top #edit-zone .plone-toolbar-logo img {
-  margin-top: 5px;
-}
-#edit-zone .plone-toolbar-logo {
-  padding-right: 13px;
-  padding-left: 13px;
-}
-aside .portletContent div {
-  text-align: center;
-}
-aside .portletContent div a img{
-  margin: 3px;
-}
-
-.portlet .portletContent {
-    max-width: 100%;
-    overflow: hidden;
-/*    padding-right: 5px;*/
-
-}
-.portlet .portletContent > * {padding:0}
-.todaynotice:after {
-  content: url(/OppToday/resource/logo_70_70.png/@@images/image/alert)
-}
-.soon:after {
-  content: url(/OppToday/resource/coming-soon.png/@@images/image/alert)
-}
-
-#content-core {
-  font-size: 16px;
-  line-height: 30px;
-}
-
-#content-core h4 {
-  font-size: 22px;
-}
-
-#content-core ul {
-  padding-left: 5px;
-}
-
-#content-core li {
-  padding: 5px;
-  list-style: none;
-  line-height: 26px;
-}
-
-/* color */
-
-/* override plone default color */
-.plone-navbar {
-  background: #0080ff;
-}
-
-.context {
-  background: #9dd3a8;
-  border-color: #ceefe3;
+a:visited {
+  color: #4f2a05;
 }
 
 body {
-  background: #f4f0e6;
+  color: #0000A1;
 }
 
-
-/* notice page */
-.pat-autotoc.autotabs, .autotabs {
-  background: #fffff5;
-  box-shadow: 5px 5px 2px #ccc;
-}
-
-.pat-autotoc.autotabs .autotoc-nav a.active, .autotabs .autotoc-nav a.active, .pat-autotoc.autotabs .autotoc-nav a.active:hover, .autotabs .autotoc-nav a.active:hover {
-  background: #a3daff;
-}
-.pat-autotoc.autotabs .autotoc-nav a, .autotabs .autotoc-nav a {
-  background: #fff;
-}
-
-.pat-autotoc.autotabs .autotoc-nav, .autotabs .autotoc-nav {
-  
-}
-
-
-
-/* 以下 cover_view, */
-.template-cover_view #content-core a {
-  color: #0080ff;
-}
-.template-cover_view #content-core a:visited {
-  color: #a7dbdb;
-}
-
-.template-cover_view #content-core .block-title {
-  margin: 0;
-  padding: 10px 8px;
-  background: #ffda8e;
-  color: #333;
-  box-shadow: 5px 5px 2px #ccc;
-}
-
-.template-cover_view #content-core .block {
-  background: #fffff5;
-  padding: 10px;
-  box-shadow: 5px 5px 2px #ccc;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.template-cover_view #content-core .row {
-  margin-bottom: 30px;
-}
-
-
-
-/* portlet 全站統一 */
-.portlet .portletHeader {
-  background: #9dd3a8;
-  color: #666;
+h1 {
+  font-size: 28px;
 }
 
 .portlet .portletContent {
-  background: #ceefe4;
+    background: #B9EDF8;
+}
+
+.portlet .portletHeader {
+    background: #39BAE8;
+}
+
+.cover-album .row {
+  margin: 10px; 
+}
+
+.template-album_view div.image-title {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.template-album_view div.image-title span {
+  display : inline-block;
+  white-space: nowrap;
 }
 
 
 
-/* table */
-.table {
-  box-shadow: 4px 4px 3px rgba(20%,20%,40%,0.7);
+
+.pagination li.active > span {
+  color: #fff;
+  background-color: #0000A1;
+  border: 1px solid #0000A1 !important;
 }
 
-.table .thead-dark th{
-  background: #0080ff;
-  border-color: #8df;
+.pagination li > a:hover, .pagination li > a:focus {
+  color: #763c00;
+  border: 1px solid #e5e5e5 !important;
 }
 
-.table th {
-  text-align:center;
-}
-@media (min-width: 760px){
-  .table .deadline {
-    white-space:nowrap;
-  }
+.pagination li > a, .pagination li > span {
+  color: #0000A1;
 }
 
-#content-core h3 {
-  margin: 30px 0;
-  font-size: 20px;
+.template-custom_table_view table {
+  table-layout: fixed;
+  word-wrap:break-word;
 }
 
-.template-profile_view #content-core h3 { 
-  margin-top: 0;
+.template-custom_table_view table td.title {
+  width: 90%;
 }
 
-.highlight {
-  color: #0080ff;
+.template-custom_table_view table td.date {
+  width: 10%;
 }
 
-#global_statusmessage {
+.template-custom_table_view table td.title div {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.template-custom_table_view table td.title div a {
+  white-space: nowrap;
+}
+
+.template-custom_table_view #content-core ul {
+  padding-inline-start: 1px;
+}
+
+.portlet .portletHeader > a, .portlet .portletHeader {
+  color: #0000A1;
+}
+
+#portal-footer-wrapper {
+  background-color: #0000A1;
+  color: #fff;
+}
+
+#portal-footer-wrapper a {
+  color: #e8e48a;
+}
+
+#above-content-wrapper {
+  margin-top: 30px;  
+}
+
+.template-cover_view #above-content-wrapper {
+    margin-top: 0;
+}
+
+.plone-nav > li > a:hover, .plone-nav > li > a:focus {
+  background-color: #f2b600;
+}
+
+.plone-navbar-nav > .selected > a, .plone-navbar-nav > .selected > a:hover, .plone-navbar-nav > .selected > a:focus {
+  background-color: #f2b600;
+}
+
+.plone-navbar {
+  background-color: #0000A1;
+}
+
+#content-header {
+  padding: 8px 0;
+  background: url(/Plone2/++plone++ncue.content/bg2.png);
+  background-size: cover;
+}
+
+#portal-header a {
+  max-width: 250px;
+}
+
+#portal-header a img { 
   width: 100%;
 }
 
-.table td {
-  vertical-align:middle;
-  line-height: 24px;
+.portletRelatedLink .portletContent > ul > li a{
+  padding: 3px;
+}
+
+.portletRelatedLink .portletContent > ul > li {
+  text-align: center;
+}
+
+.portletRelatedLink .portletContent > ul > li > a {
+  border: 0;
+}
+
+.portletRelatedLink .portletContent > ul {
+  padding: 10px;
+}
+
+.plone-navbar {
+  margin-bottom: 0;
+}
+
+.flexslider {
+  border: 0;
+}
+
+#student-table .tr-title {
+  background: yellow;
+  color:#333;
+}
+#student-table .tr-title td {
+  font-size:20px;
+  text-align: center !important;
+}
+
+#student-table td {
+  border: 1px #555 solid;
+  padding: 5px;
+}
+#student-table td.tr-field-name{
+  background: #b3b3dc;
+  color: #333;
+}
+
+.links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.links ul {
+  padding: 0;
+}
+
+div.cover-news .item {
+  overflow : hidden;
+  text-overflow : ellipsis;
+  white-space : nowrap;
+  width: 100%;
+}
+
+.outer-wrapper {
+  background: #b9edf866;
+}
+
+.portletWrapper, table.listing {
+  box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1250px;
+  }
+}
+
+.listing > tbody > tr:nth-child(even) > td, .listing > tbody > tr:nth-child(even) > th {
+    background-color: #fff7d9;
 }
 
 .plone-nav li label::after {
   content: none;
 }
+
+.plone-nav li.has_subtree a {
+    padding-right: 15px;
+}
+
+.plone-nav li ul li a {
+    background-color: #1F6ED4;
+}
+
+
+
+/*
+藍 深 --> 淺:
+#0000A1
+#1F6ED4
+#39BAE8
+#B9EDF8
+*/

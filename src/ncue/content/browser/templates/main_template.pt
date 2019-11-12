@@ -42,11 +42,12 @@
     <link tal:replace="structure provider:plone.htmlhead.links" />
 
 
-    <link rel="stylesheet" type="text/css" href="${portal_url}/++plone++ncue.content/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="${portal_url}/++plone++ncue.content/flex_slider/flexslider.css" />
 
 
 <!-- 不加這行目前正常，再觀察 <script src="${portal_url}/++plone++ncue.content/bootstrap.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="${portal_url}/++plone++ncue.content/custom.css" />
+    <script src="${portal_url}/++plone++ncue.content/jquery.flexslider-min.js"></script>
   </head>
 
   <body tal:define="isRTL portal_state/is_rtl;

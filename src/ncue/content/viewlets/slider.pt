@@ -1,0 +1,29 @@
+<?python
+from plone import api
+portal = api.portal.get()
+items = portal['source']['slider'].keys()
+?>
+<tal:cond condition="python:1 or view.view.__name__ == 'cover_view'">
+
+<div style="max-width:100%; text-align:center;overflow:hidden">
+  <div class="flexslider">
+    <ul class="slides">
+      <li tal:repeat="item items">
+        <img src="${portal/absolute_url}/source/slider/${item}/@@images/image" />
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false
+  });
+});
+</script>
+</tal:cond>
+
+
+
