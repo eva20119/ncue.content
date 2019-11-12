@@ -5,12 +5,11 @@
   <!-- Extra portlets here  -->
 
   <portlet
-    addview="ncue.content.portlets.sidebar"
-    title="sidebar"
+    addview="ncue.content.portlets.Relatedlink"
+    title="RelatedLink"
     description="A portlet which can render weather of the given place."
-    i18n:attributes="title title_sidebar;
-                     description description_sidebar">
-
+    i18n:attributes="title title_relatedlink;
+                     description description_relatedlink">
     <!-- This will enable the portlet for right column,
     left column and the footer too.
     -->

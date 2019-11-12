@@ -4,15 +4,7 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="ncue.content">
 
-  <browser:viewlet
-     name="slider"
-     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-     manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
-     layer="ncue.content.interfaces.INcueContentLayer"
-     class=".slider.Slider"
-     template="slider.pt"
-     permission="zope2.View"
-     />
+
 
 
     <browser:viewlet

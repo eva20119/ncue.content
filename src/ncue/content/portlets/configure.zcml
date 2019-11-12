@@ -5,14 +5,14 @@
 
   <include package="plone.app.portlets" />
 
-  '-*- extra stuff goes here -*-'
+  <!-- '-*- extra stuff goes here -*-' -->
 
   <plone:portlet
-    name="ncue.content.portlets.sidebar"
-    interface=".sidebar.ISidebarPortlet"
-    assignment=".sidebar.Assignment"
-    renderer=".sidebar.Renderer"
-    addview=".sidebar.AddForm"
-    editview=".sidebar.EditForm" />
-
+    name="ncue.content.portlets.Relatedlink"
+    interface=".relatedlink.IRelatedlinkPortlet"
+    assignment=".relatedlink.Assignment"
+    renderer=".relatedlink.Renderer"
+    addview=".relatedlink.AddForm"
+    editview=".relatedlink.EditForm" />
+    
 </configure>

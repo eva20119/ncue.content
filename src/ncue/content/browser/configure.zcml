@@ -17,6 +17,18 @@
       type="plone"
       directory="static"
       />
+  <browser:pages
+      for="plone.dexterity.interfaces.IDexterityContainer"
+      class="plone.app.contenttypes.browser.folder.FolderView"
+      permission="zope2.View">
+    <browser:page
+        name="custom_table_view"
+        template="templates/custom_table_view.pt"
+        menu="plone_displayviews"
+        title="Custom Table view"
+        />
+  </browser:pages>
+
    <browser:page
       name='item_order'
       for="Products.CMFCore.interfaces._content.IFolderish"
@@ -61,7 +73,6 @@
         name="cover_view"
         for="*"
         class=".views.CoverView"
-        template="templates/folder_listing.pt"
         layer="zope.interface.Interface"
         permission="zope2.View"
     />

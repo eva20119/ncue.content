@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<aside class="portlet portletRelatedLink" role="relatedlink"
+    i18n:domain="isrc.content">
+
+  <header class="portletHeader">
+      <a href="javascript:void(0)" class="tile">
+相關連結
+      </a>
+  </header>
+
+  <div class="portletContent">
+
+<?python
+from plone import api
+portal = api.portal.get()
+items = portal['relate_link'].contentItems()
+?>
+
+  <ul>
+    <tal:li tal:repeat="item items">
+      <li>
+        <a target="_blank" href="${python: item[1].remoteUrl}">
+          <img src="${python: item[1].absolute_url()}/@@images/image/mini">
+        </a>
+      </li>
+    </tal:li>
+  </ul>
+
+  </div>
+</aside>
+</html>
+

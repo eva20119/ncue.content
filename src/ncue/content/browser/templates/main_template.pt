@@ -76,7 +76,6 @@
     </aside>
 
     <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
-
     <article id="portal-column-content">
 
       <metal:block define-slot="content">

@@ -17,10 +17,11 @@
     <element value="plone.app.contenttypes.behaviors.leadimage.ILeadImage"/>
   </property>
 
-  <property name="default_view">custom_folder_listing</property>
+  <property name="default_view">custom_table_view</property>
   <property name="default_view_fallback">False</property>
-  <property name="immediate_view">custom_folder_listing</property>
+  <property name="immediate_view">custom_table_view</property>
   <property name="view_methods">
+    <element value="custom_table_view"/>
     <element value="custom_folder_listing"/>
     <element value="teacher_listing" />
     <element value="album_view"/>

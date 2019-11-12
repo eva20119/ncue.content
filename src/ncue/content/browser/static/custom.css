@@ -5,7 +5,12 @@
 #39BAE8
 #B9EDF8
 */
-
+#mainnavigation-wrapper{
+  margin-bottom: 40px;
+}
+.documentFirstHeading, #portal-footer-wrapper .colophon{
+  display: none;
+}
 a {
   color: #0000A1;
 }

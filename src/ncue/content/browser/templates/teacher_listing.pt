@@ -28,15 +28,15 @@
                     item_url item/getURL;
                     item_title item/Title;
                     ">
-                    <div class='col col-md-10 col-sm-12 teacher'>
+                    <div class='col-md-12 col-sm-12' style='margin-bottom: 10px;'>
                       <div class="row">
-                        <div class='col col-xs-4'>
+                        <div class='col-xs-4'>
                             <a href="${item_url}/teacher_detail">
                                 <img src="${item_url}/@@images/img" tal:condition='item/img' style='width: 200px;height: 230px'/>
                                 <div style='width: 200px;height: 230px;background: grey' tal:condition='not: item/img'/>
                             </a>
                         </div>
-                        <div class='col col-xs-8'>
+                        <div class='col-xs-8'>
                             <table style='width: 100%'>
                                 <tr>
                                     <td style='width: 124px'>姓名</td>
